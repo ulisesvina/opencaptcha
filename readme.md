@@ -13,5 +13,8 @@ OpenCaptcha is under MIT license.
 This is (personally) my favorite part of OpenCaptcha, you just need **two lines** of code to add OpenCaptcha to your website.
 
 ```
-
+<!-- OpenCaptcha Goes Here -->
+<opencaptcha formid="captcha-form"></opencaptcha><br>
+<script src="captchaLibrary/opencaptcha.js"></script>
+<!-- OpenCaptcha Goes Here -->
 ```
