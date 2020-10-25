@@ -1,10 +1,10 @@
 # OpenCaptcha
 
-## What is OpenCaptcha?
+## What is OpenCaptcha?
 
 OpenCaptcha is a serverless captcha for static websites. It's fast, lightweight and mostly secure.
 
-## License
+## License
 
 OpenCaptcha is under MIT license.
 
