@@ -23,7 +23,7 @@ function Catpcha(formid) {
     form = document.getElementById(formid);
     captchaStyle = document.createElement("link");
     captchaStyle.setAttribute("rel", "stylesheet");
-    captchaStyle.setAttribute("href", "captchaLibrary/style.css");
+    captchaStyle.setAttribute("href", "https://rawcdn.githack.com/ulisesvina/opencaptcha/b6a46ef2ba8f3154d8a405c3ce2f2aa9d409da07/src/style.css");
     document.head.appendChild(captchaStyle);
 
     // Setting Up Captcha
