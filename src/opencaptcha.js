@@ -2,7 +2,7 @@
 /* =================================
 License: MIT
 Language: JavaScript & CSS
-Author: Ulises Viña A. (ulisesvina/SIMPatic)
+Author: Ulises Viña A. (ulisesvina)
 Based On/Inspiration: reCaptcha 
 ================================= */
 
@@ -23,7 +23,7 @@ function Catpcha(formid) {
     form = document.getElementById(formid);
     captchaStyle = document.createElement("link");
     captchaStyle.setAttribute("rel", "stylesheet");
-    captchaStyle.setAttribute("href", "https://min.gitcdn.link/repo/ulisesvina/opencaptcha/master/captchaLibrary/style.css");
+    captchaStyle.setAttribute("href", "captchaLibrary/style.css");
     document.head.appendChild(captchaStyle);
 
     // Setting Up Captcha
@@ -57,8 +57,14 @@ function Catpcha(formid) {
     }
 
     form.addEventListener('submit', (e) => {
-        let captchaValue = document.getElementById("challengeText").value
-        if(captchaValue === str) {
+        let chalElem = document.getElementById("challengeText")
+
+        if(chalElem == null || chalElem == undefined || chalElem.value.length == 0 || document.getElementById(captchaTag.getAttribute("formid"))) {
+            e.preventDefault()
+            return false;
+        }
+
+        if(chalElem.value === str) {
             return true;
         } else {
             e.preventDefault()
