@@ -15,6 +15,6 @@ This is (personally) my favorite part of OpenCaptcha, you just need **two lines*
 ```
 <!-- OpenCaptcha Goes Here -->
 <opencaptcha formid="captcha-form"></opencaptcha><br>
-<script src="https://rawcdn.githack.com/ulisesvina/opencaptcha/b6a46ef2ba8f3154d8a405c3ce2f2aa9d409da07/src/opencaptcha.js"></script>
+<script src="https://raw.githack.com/ulisesvina/opencaptcha/master/src/opencaptcha.js"></script>
 <!-- OpenCaptcha Goes Here -->
 ```
